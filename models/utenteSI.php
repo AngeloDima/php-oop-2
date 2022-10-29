@@ -1,6 +1,6 @@
 <?php
 
-class UserLogin {
+class utenteSI {
     public $nome;
     public $cognome;
     public $indirizzoDiCasa;
