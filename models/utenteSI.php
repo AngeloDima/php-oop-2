@@ -3,8 +3,9 @@
 class utenteSI {
     public $nome;
     public $cognome;
-    public $indirizzoDiCasa;
+    public $indirizzoDiCasa = ``;
     public $Email;
+    public $password;
     public $CartaDiCredito;
 }
 
