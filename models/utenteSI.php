@@ -7,9 +7,9 @@ class utenteSI extends utenteNO{
     public $indirizzoDiCasa = ``;
     public $Email;
     public $password;
-    public $CartaDiCredito;
 
-    public $shopping = [];
+    private $scontoCliente = 0.8;
+
 
     public function checkOut(){
         $TotalShoppingPrice = parent::checkOut();

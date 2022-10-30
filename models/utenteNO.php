@@ -19,7 +19,7 @@ class utenteNO{
 
 
 
-    
+
     public function checkOut(){
         $prezzoTotale = 0;
         
@@ -31,6 +31,16 @@ class utenteNO{
             "totale" => $prezzoTotale;
         }
     }
+
+
+    public function pagamento(){
+        if ($this->cartaDiCredito->isValid()){
+            $prezzo = $this->checkOut();
+            $this->cartaDiCredito->procediPagamento($prezzoTotale[`prezzo totale`]);
+        }
+    }
+
+
 }
 
 
